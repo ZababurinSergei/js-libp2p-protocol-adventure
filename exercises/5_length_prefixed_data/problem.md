@@ -1,4 +1,4 @@
-So far we've been sending very small amounts of data, the kind of amounts that would fit into a single network packet.
+````So far we've been sending very small amounts of data, the kind of amounts that would fit into a single network packet.
 
 What if we want to send many bytes in one go?
 
@@ -76,3 +76,4 @@ $ protocol-adventure verify path/to/my/solution.js
 - it-length-prefixed-stream https://www.npmjs.com/package/it-length-prefixed-stream
 - uint8arraylist https://www.npmjs.com/package/uint8arraylist
 - uint8-varint https://www.npmjs.com/package/uint8-varint
+````

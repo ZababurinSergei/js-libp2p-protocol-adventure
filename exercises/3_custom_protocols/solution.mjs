@@ -21,7 +21,7 @@ export async function dial (ma, protocol, data) {
   const stream = await node.dialProtocol(ma, protocol, {
     signal: AbortSignal.timeout(1000)
   })
-
+   // console.log('((( ----- protocol ----- )))', stream)
   return await pipe(
     data,
     stream,
@@ -48,6 +48,7 @@ export async function respond (protocol) {
   })
 
   node.handle(protocol, ({ stream }) => {
+
     pipe(
       stream,
       stream

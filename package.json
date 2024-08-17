@@ -4,11 +4,11 @@
   "description": "Learn how to develop custom protocols with libp2p",
   "repository": {
     "type": "git",
-    "url": "git://github.com/libp2p/js-libp2p-protocol-adventure"
+    "url": "git://github.com/libp2p/js-libp2p-protocol-adventure.git"
   },
   "license": "ISC",
   "bin": {
-    "protocol-adventure": "./index.js"
+    "protocol-adventure": "index.js"
   },
   "scripts": {
     "lint": "standard",
@@ -42,5 +42,14 @@
   },
   "pre-commit": [
     "lint"
-  ]
+  ],
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/libp2p/js-libp2p-protocol-adventure/issues"
+  },
+  "homepage": "https://github.com/libp2p/js-libp2p-protocol-adventure#readme"
 }

@@ -9,7 +9,10 @@ When writing data, once the promise resolves, the data is guaranteed to have bee
 ```js
 import { byteStream } from 'it-byte-stream'
 
-// it's a good idea to pass a timeout when doing async work
+// it's a good idea to pass a timeout whe// import { CID } from "multiformats/cid";
+// import * as json from 'multiformats/codecs/json'
+// import { sha256 } from 'multiformats/hashes/sha2'
+// const bytes = json.encode({ hello: 'world' })n doing async work
 const signal = AbortSignal.timeout(5000)
 
 const stream = await libp2p.dialProtocol(multiaddr, myProtocolId, {
